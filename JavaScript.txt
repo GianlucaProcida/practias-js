@@ -1,0 +1,289 @@
+JavaScript
+
+Lenguaje de programacion, herramienta para darle instrucciones al ordenador para que cumpla las funciones que queremos.
+Es un lenguaje interpretado, porque se ejecuta directamente en el ordenador.
+Esta orientado a objetos, abarco todos los conceptos y posibilidades.
+Es imperativo se ejecuta de linea en linea.
+Case sensitive: es sensible a mayusculas y minisculas.
+Esta basado en prototipos, instancias, classles
+Es de tipado debil, lo que quiere decir que una variable pueda ser varias cosas.
+Es un lenguaje dinamico, la variable se adapta al dato.
+
+Todos los sitios web para que sean dinamicos necesitan JavaScript.
+
+Como enlazar JavaScript
+en linea: poniendolo en una etiqueta 
+dentro de la etiqueta script
+enlazado a un archivo externo
+
+Variables:
+
+Es un espacio que guardamos en memoria.
+recipiente = "papel".
+Existen tipos de datos
+string: texto cualquiera con comilla simple o dobles
+Number: se indica un numero y va sin comillas
+Booleano = false o true
+
+Casos especiales de datos: undefined. null, nan.
+
+Las variables se pueden declarar, modificar o inicializar. Se declaran a traver de VAR, LET, CONST.
+
+Para declararla tenemos que definir el alcance que va a tener (ej: let numero)
+Para inicializarla tenemos que darle valor (ej: numero 29). Se puede declarar e inicializar en la misma linea (ej: let numero = 29).
+
+let: limita el alcance de la variable al bloque en la que la ejecutamos. Si se puede modificar
+
+const: constante siempre va a tener el valor que  le declaremos, no se puede modificar. Se tiene que inicializar cuando se declara
+
+null: indica que la variable esta vacia (ese es su valor)
+
+nan: not a number (no es un numero) 
+
+Prompt: funciona como el alert pero al usuario le permite ingresar una respuesta la cual se guarda con las variables.
+ej: let nombre = prompt("decime tu nombre");
+luego de colocar la respuesta la variable se guarda con un valor determinado por mi respuesta, con lo cual, si yo hubiera colocado GIANLUCA como respuesta luego de el ejemplo mencionado anteriormente y declara un alert(nombre) la pantalla me mostraria la respuesta que yo di anteriormente.
+
+Operadores: asignacion y aritmeticos.
+
+Asignacion: un operador de asignacion asignacion asigna un valor al operando de la izquierda basado en el valor operando de la derecha.
+
+Aritmeticos: toman valores numericos (ya sean literales o variables)  como sus operandos y retornan un valor numerico unico. Convierten los valor numericos en un valor.
+
+Concatenacion: unir strings (dos cadenas de texto). Se puede forzar un string para que tome todo como una misma linea de texto con el tipado dinamico (" ").
+
+Escape de comillas simples y dobles:  Si quisieramos escribir algo que incluya comillas dobles deberiamos citar el texto con comillas simples y viceversa.
+
+Operadores logicos: se basan en los operadores de comparacion. Nos devuelven un resultado a partir de que se cumpla (o no) una condicion, su resultado es booleano y sus operandos son valores logicos o asimilables a ellos. 
+&& si las dos condiciones se cumplen es true
+|| Si cualquiera de las dos es verdadera todo es verdadero
+!nos devuelve la inversa del resutado correcto
+
+Operadores de comparacion: comparan dos expresiones y devuelven un valor BOOLEAN que representa la relacion de sus valores. 
+== le preguntamos si es el mismo valor numero=texto ===le preguntamos si son estrictamente iguales en sus datos
+
+CamelCase: la primera letra de todas va con minuscula y dsps cada nueva palabra empieza con mayuscula (ej: palabraPalabra)
+
+Condicionales: es una sentencia que nos permite validar algo, un fragmento de codigo, un bloque ubicado dentro de {} y se ejecuta.
+Con los else if podemos declarar que si lo anterior no se cumpla se aplique otra condicion. Si luego de varias condiciones if o else if no se cumple ninguna podemos declara un UNICO "else"
+
+Arrays: Conjunto de datos, ubicados en indices o posiciones. sirven para guardar varios datos. Se cuenta desde 0 posicion 0 en adelante. Si una posicion no esta definida nos va a arrojar undefined. 
+Arrays asociativos: son objetos. Trabaja con el intercambio de informacion. 
+
+En las lineas de texto se pueden agregar etiquetas de HTML.
+
+Bucles e iteracion: 
+Los bucles se repiten constantemente
+con do-while primero lo ejecuto y luego pregunto si la condicion se cumple, en caso de cumplirse procede a ejecutarse todo, si no se cumpliera la solamente se ejecuta lo que declaramos inicialmente. Primero se coloca el do y luego el while. 
+
+Existen bucles en lo que les decimos cuantas vueltas dan y otros que no
+
+en los for primero declaramos, luego inicializamos y por ultimo iteramos. Dentro de los for se crean variables
+
+Las variables no se pueden modificar sobrescribiendola debajo. Pero con los for si se puede para dentro de ese bloque
+
+Con break limitamos la cantidad de veces que queremos que se repita.
+Con continue se saltea la posicion numero o lo que declaremos .
+
+FUNCIONES: Es una porcion de codigo, con un nombre especifico para poder acortar la escritura, seria como declarar un id o clase a varios elementos. Las funciones se crean y luego se llaman. Las funciones no son funciones sin parametro, sin que pueda variar lo que hacen.
+
+
+
+PROGRAMACION ORIENTADA A OBJETOS!!!!!!
+
+Es un paradigma de la programacion, actualiza la forma que programamos y la mejor, nos permite programar objetos como si lo hicieramos en la vida real. Un paradigma es una forma de crear soluciones.
+Clase: receta, plantilla que nos permite crear objetos.
+Objetos: resultados de las clases.
+Atributo: propiedades caracteristicas.
+Metodo: lo que puede hacer el objeto. 
+constructor: funcion obligatoria de las clases.
+instanciacion: es cuando la clase esta terminada.
+
+Los metodos son las acciones que vamos a realizar. Se crean dentro de la clase. No admiten funciones flecha
+
+Caracteristicas:
+-abstraccion: Intentar reducir el objeto lo mas posible (raza, color, tamaño). 
+-modularidad: Es separar un problema grande por partes para poder resolverlo mas dinamicamente.
+-encapsulamiento: Es mantener los datos privados.
+-polimorfismo: consiste en ver como un objeto se comporta de manera distinta ante el mismo objeto.
+
+Herencia: Tomar todo lo que puede hacer una clase y ademas agregarle cosas nuevas.
+
+No se puede tener un objeto con el nombre de la clase
+La idea es poder usar una CLASS inicial que abarque todas las caracteristicas grales  que comparten los objetos, y luego aplicar herencia con nuevas clases que agreguen las caracteristicas a cada objeto especifico dentro de la primera clase.
+
+Metodos estaticos: no necesita que la clase se defina para ser creado.
+
+Metodos accesores: getters son para obtener un valor los setters son para modificarlo.
+
+METODO DE CADENAS:
+-Concat: junta 2 o mas cadenas y retorna una nueva.
+-Startswith: Si una cadena comienza con los caracteres de otra cadena devuelve true sino false. 
+-Endswith: si una cadena terminacon los caracteres de otra cadena devuelve true sino false. 
+los string son objetos
+-Includes: si una cadena puede encontrarse dentro de otra cadena devuelve true sino false.
+-indexOf: nos devuelve un numero que es el numero de objeto o numero de caracter.
+-lastIndexOf: nos devuelve la ultima coincidencia
+
+no estandar:
+-padstars: rellena la cadena al principio con los caracteres deseados.
+-padend: es lo mismo pero al final.
+-repeat: devuelve la misma cadena pero repetida las veces que queremos.
+
+Otros metodos de cadena: sirven para convertir o transformarlas.
+-split:divide la cadena como se lo pidamos, funciona como un array
+-substring: nos devuelve lo que seleccionamos
+-toLowerCase: convierte una cadena a minuscula.
+-toOpperCase: convierte una cadena a mayuscula.
+-toString: convierte a string un dato.
+
+Metodos de array transformadores:
+pop: elimina el ultimo elemento del array y nos muestra cual elimino.
+shift: elimina el primero.
+push: agrega un elemento al array al final de la lista y nos devuelve como valor la cantidad de elementos o el valor del elemento (si incialmente tuvieramos 3 elementos y con push agregaramos uno mas nos mostraria 4). 
+reverse: invierte el orden de los elementos.
+unshift: agrega 1 o mas elementos al inicio del array y devuelve la nueva longitud del array
+sort: ordenar los elementos de un array localmente y devuelve el arreglo ordenado. Ya se numerico o alfabetico.
+splice: se delimita  [0(como numero donde quiero que comience a eliminar),1(como numero hasta donde quiero que elimine), x(escribo lo que desee si quiero agregar algo que lo reemplace)]. Si no quisiera eliminar nada y solo agregar podria colocar (0,0, y lo que quisiera agregar al principio). 
+
+Metodos de arrays accesores:
+join: Lo transforma en una cadena de texto nueva y nos permite utilizar el separador que querramos a diferencia de toString.
+slice: devuelve una parte del array dentro del nuevo array empezando por el inicio hasta el fin (fin no incluido).
+
+Metodos de arrays de repeticion:
+filter: es como un bucle, y ademas nos permite declarar condiciones. 
+forEach:
+
+
+OBJETO MATH
+sqrt: raiz cuadrada
+cbrt: raiz cubica
+max: recibe muchos numero y nos devuelve el mas grande.
+min: nos devuelve el menor.
+random: nos devuelve un numero pseudo-aleatoria entre o y 1
+round: devuelve un numero redondeado al numero entero mas cercano
+floor: devuelve el mayor entero menor que o igual a 1
+tronc: no redondea
+
+Los elementos del array asociativo se separan con comas (,)
+
+¿LA MALDITA O BENDITA CONSOLA?
+
+-assert:
+-clear: se limpia todo lo anterior
+-error:nos muestra un error de lo que escribimos
+-info: msj informativo
+-log: msj de depuracion
+-table: tiene que ser un array o un objeto, es una forma de crear una tabla en consola
+-warn: es una advertencia
+dir: despliega una lista entera de la info
+
+-count: indica cuantas veces se ejecuto una funcion
+-countReset: resetea la cuenta.
+
+-group: crea un grupo
+
+
+
+DOM: Document Object Model
+Es una interfaz que contiene todos los objetos estandares que nos permiten representar un documento HTML. 
+
+Nodo: es cualquier etiqueta del cuerpo (p body etc)
+Tipos de nodo: 
+document: nodo raiz de los que derivan el resto
+Element: nodo definido por etiquetas HTML
+Text: el texto dentro de un nodo element se considera un nuevo nodo hijo de tipo text.
+Atribute: los atributos de las etiquetas definen nodo, (en JavaScript no los vemos como nodos sino como informacion).
+Comentarios y otros elementos
+
+Metodos de seleccion de elementos:
+todos los metodos que nos van a permitir seleccionar elementos o grupos de elementos
+
+-document.getClementById() selecciona un elemento por ID
+-getElementsByTagName() selecciona todos los elementos que coincidan con el nombre de la etiqueta especificada
+-querrySelector() devuelve el primer elemento que coincida con el grupo especificado de selectores
+-querrySelectorAll() devuelve todos los elementos que coincidan con el grupo especificado de selectores
+
+nodelist: lista de nodo
+
+Metodos para definir, obtener y eliminar atributos
+
+setAttribute() modifica el valor de un atributo
+
+getAttribute() obtiene el valor de un atributo
+
+removeAttribute() Remueve el valor de un atributo
+
+
+textContent nos muestra todo el texto que esta dentro del elemento aunque lo hayan ocultado con style="visibility:hidden;", lo que si no muestra son las etiquetas
+innerText: solo nos muestra lo que esta visible, ya no se usa
+
+innerHTML muestra todo el codigo dentro del elemento si usamos alert.
+outerHTML nos devuelve todo el codigo incluyendo las etiquetas que lo rodean
+
+
+Creacion de elementos: Esto permite crear elementos desde JavaScript asi tambien agregar elementos dentro de otros elementos como por ejemplo un li dentro de un div o un texto dentro de un li
+
+Las colecciones html no se pueden recorrer en consola, los nodelist si
+
+MID LEVEL
+----------------------
+
+Window: es un objeto de JavaScript, hasta el DOM depende de window.
+
+open: para abrir otra ventana
+close: para que se cierre
+closed: para verificar si se cerro
+stop: deja de cargar la web
+alert: nos muestra un msj en pantalla
+print: abre un cuadro de dialogo para imprimir el documento actual
+prompt: nos pide un dato y nos devuelve un string.
+confirm: se utiliza como "estas seguro que deseas salir del sitio web?" "estas seguro que quieres guardar los cambios?"
+
+
+screen: objeto que nos permite ver las propiedades del objeto. Son propiedades de lectura
+
+scroll(): desplaza la ventana a un lugar particular en el documento (con option y posiciones).
+
+EVENTOS: Es cualquier cambio que ocurre en la pagina, o cualquier cosa que suceda. 
+
+El flujo de evento consiste en que los eventos se ejecutan del mas especifico al menos especifico, aunque si hubiera uno que quisieramos que fuera primero le podriamos agregar true como ultimo parametro ese iria primero, ya que eso hace que se reacomode el orden. Si quisiera detener la propagacion o ejecucion en algun punto podria agregar a la propiedad del evento (en este caso "e") e.stopPropagacion() 
+
+CONTROL DE FLUJO Y MANEJO DE ERRORES
+Sentencia de bloque: crea un nuevo ambito de variables
+que en cierto punto es independiente del resto de las variables declaradas
+
+
+Sentencia Switch: analiza una variable y muestra lo que seleccionemos en base a lo que declaramos en el condicional
+
+Sentencia de manejo de excepciones: para manejar errores o mostrarle errores al usuario.
+Excepciones ECMAScript son las que estan relacionadas a la tecnologia detras de JavaScript
+
+Try... Catch: soluciona los errores
+typeof nos permite ver el tipo de dato
+Catch incondicional: es el que esta vacio de condiciones
+Catch condicional: es el que tiene un error en sus condiciones
+Finally: se ejecuta si o si, sobrescribe los valores declarados.
+Throw: con esto declaramos un error que se va a ejecutar.
+
+OBSOLETO:
+No es util para las circunstancias actuales (deprecated=obsoleto), tiene bugs y fallos, va a ser reemplazado, hay mejores formas de hacerlo.
+Los efectos negativos, uso excesivo de recursos, fallos bugs, codigo innecesariamente largo, mal SEO.
+¿Como saber si esta obsoleto? 1 de cada 3 WEBS utiliza librerias de javascript obsoletas. Tenemos que verificar si tienen o usan funciones, metodos, objetos o metodologias obsoletas. Y por ultimo verificar en los sitios web basados en estandares oficiales.
+
+CALLBACKS: Es una funcion dentro de una funcion. Es una funcion que pasamos como parametro a otra funcion.
+
+PROMESAS: vienen a resolver el problema de la excesiva escritura. Son un objeto que adentro tienen 2 callbacks
+reject
+resolve
+Then es un metodo que tienen las promesas que nos accede al valor que tiene resolve o reject. Es un metodo que recibe un callback
+Las promesas son asincronas osea que trabajan en tiempo real.
+
+Funciones asincronas
+Await: accede al valor que retorna la promesa y hasta que no obtiene esa informacion no pasa a la siguiente.
+
+PETICIONES HTTP: Nuestro navegador (cliente) pidiendole informacion al servidor (respuesta). No guardan informacion. 
+Se trabajan con herramientas como Ajax axioz
+
+Datos JSON: Datos estructurados, JavaScript object notation. Funciona como los arrays asociativos, con la diferencia que las propiedades las define con comillas. JSON se creo para poder enviar la informacion al servidor de manera clara.
+-Serializacion: significa que es una cadena de texto con formato JSON. De esta manera es que debemos enviarlos al servidor para que lleguen de forma correcta y clara.
