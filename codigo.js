@@ -1019,7 +1019,8 @@ const getName = async ()=>{
 
     let peticion = await fetch("informacion.txt");
     let resultado = await peticion.json();
-    document.querySelector(".resultado").innerHTML = resultado
+   
+    console.log(resultado);
 }
 
-document.getElementById('nombre').addEventListener("click",getName);
+getName()
